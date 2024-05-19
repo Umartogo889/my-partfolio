@@ -17,7 +17,7 @@ const Contact = () => {
             <div>
               <a
                 className="text-[17px] font-poppins tracking-wider flex items-center justify-center"
-                href="mail:umartolibov700@gmail.com"
+                href="mailto:umartolibov700@gmail.com"
               >
                 <FontAwesomeIcon icon={faVoicemail} className="mr-2 " />
                 umartolibov700@gmail.com

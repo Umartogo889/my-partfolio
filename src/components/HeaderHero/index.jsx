@@ -31,7 +31,9 @@ const HeaderHero = () => {
                 "https://raw.githack.com/Umartogo889/resume/main/Umar%20Tolibov%20Resume%20(3).pdf"
               }
               className="btn-hero  hover:text-white  hover:bg-slate-800 dark:hover:bg-[#ccc]  dark:hover:text-[#000]"
-              href={"https://raw.githack.com/Umartogo889/resume/main/Umar%20Tolibov%20Resume%20(3).pdf"}
+              href={
+                "https://raw.githack.com/Umartogo889/resume/main/Umar%20Tolibov%20Resume%20(3).pdf"
+              }
             >
               CV yuklash
             </a>
@@ -49,7 +51,7 @@ const HeaderHero = () => {
             <a href={"tel:+998915567733"} className="h-6 ">
               <FontAwesomeIcon icon={faPhone} size="lg" />
             </a>
-            <a href={"tel:+998915567733"} className="h-6 ">
+            <a href="mailto:umartolibov700@gmail.com" className="h-6 ">
               <FontAwesomeIcon icon={faMailBulk} size="lg" />
             </a>
           </div>

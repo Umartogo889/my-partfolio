@@ -37,8 +37,8 @@ export const AboutProject = [
   {
     name: "Partfolio",
     img: partfolio,
-    linkgit: "https://github.com/Umartogo889/CRM",
-    link: "https://crm-demo-umar.netlify.app/",
+    linkgit: "https://github.com/Umartogo889/my-partfolio",
+    link: "https://umar-tolibov-partfolio.netlify.app/",
   },
 ];
 export const linkMyAbout = [

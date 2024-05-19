@@ -11,7 +11,7 @@ const Projects = () => {
             Men Yaratgan
           </p>
           <h1 className="text-center font-bold text-3xl tracking-widest dark:text-[#fff]">
-            Loyhalar
+            Loyhalar    
           </h1>
           <div className="flex items-center justify-center mt-10 ">
             <div className=" ss:grid ss:grid-cols-2 md:grid-cols-3 ss:gap-3 ms:gap-10">
