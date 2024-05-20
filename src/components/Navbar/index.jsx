@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { menuitem } from "../../layout/Container/Context/Context";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMoon, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 // images
 import Sun from "../../images/light-mode-svgrepo-com.svg";
 const Navbar = () => {
-  const [count, SetCount] = useState(true);
+  const [count, SetCount] = useState(false);
   const [theme, SetTheme] = useState(localStorage.getItem("theme"));
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -29,19 +29,30 @@ const Navbar = () => {
         <h1 className="text-3xl font-poppins font-medium text-[#161616] dark:text-[#dff5f3] ">
           Umar
         </h1>
-        {count && (
-          <ul className=" absolute sm:relative sm:flex  sm:mt-0 sm:mr-9  mt-7 mr-7 p-[20px]  sm:p-0 bg-[#ccc] sm:bg-transparent sm:bg-[#fff]  text-white sm:text-black">
-            {menuitem.map((item) => {
-              return (
-                <li className="nav-list">
-                  <Link smooth={true} duration={700} to={item.title}>
-                    {item.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        )}
+
+        <ul
+          className={`absolute -translate-y-full delay-700 mt-[177px] z-50 gap-5 -ml-6  sm:translate-y-0 ${
+            count && "translate-y-0"
+          } w-[115%]  justify-center transition flex-col sm:flex-row  items-center sm:w-auto sm:relative flex  sm:mt-0 sm:mr-9  mr-7 p-[20px]  sm:p-0 bg-[#ccc] sm:bg-transparent sm:bg-[#fff]  text-white sm:text-black`}
+        >
+          {menuitem.map((item) => {
+            return (
+              <li className="nav-list">
+                <Link smooth={true} duration={700} to={item.title}>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
+          {count && (
+            <FontAwesomeIcon
+              className="absolute right-7 top-8 text-black "
+              size="xl"
+              icon={faXmark}
+              onClick={() => SetCount(false)}
+            />
+          )}
+        </ul>
 
         <FontAwesomeIcon
           className="absolute right-0 sm:hidden dark:text-[#fff]"

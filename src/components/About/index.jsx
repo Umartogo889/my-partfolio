@@ -14,7 +14,7 @@ const About = () => {
         <p className="text-center mt-2 font-medium font-poppins text-2xl text-[#555e] -tracking-tighter dark:text-[#ccc] ">
           ko'proq bilib oling
         </p>
-        <div className=" mt-10 md:mt-20 flex flex-col md:flex-row justify-center md:justify-between items-center">
+        <div className=" mt-0 md:mt-20 flex flex-col md:flex-row justify-center md:justify-between items-center">
           <img
             className="relative hidden md:block md:left-14 w-[200px] md:w-[350px]  rounded-2xl"
             src={aftorImg}

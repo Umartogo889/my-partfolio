@@ -15,7 +15,7 @@ const HeaderHero = () => {
             alt="Aftor img"
           />
         </div>
-        <div className="text-center -mt-[100px] sm:mt-0 xs:w-[300px]">
+        <div className="text-center -mt-[30px] sm:mt-0 xs:w-[300px]">
           <p className=" text-[#555] text-xl font-inter font-medium dark:text-[#c6cccc]">
             Salom, men
           </p>

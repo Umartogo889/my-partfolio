@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 .nav-list {
-  @apply sm:ml-[25px] cursor-pointer mt-[10px]  sm:mt-0 font-inter  text-[19px] font-normal dark:text-[#fff] font-poppins;
+  @apply sm:ml-[25px] sm:gap-0 cursor-pointer mt-[10px] mx-auto  sm:mt-0  text-[19px] font-normal dark:text-[#fff] font-poppins;
 }
 .btn-hero {
-  @apply px-8 py-3 lg:px-7 border-2 rounded-3xl transition duration-500 border-[#e5e7eb] cursor-pointer dark:text-[#fff]
+  @apply px-8 py-3 lg:px-7 border-2 rounded-3xl transition duration-500 border-[#e5e7eb] cursor-pointer dark:text-[#fff];
 }
 .btn-project {
   @apply border border-gray-400 transition duration-500 px-3 py-2 font-medium rounded-[25px] hover:bg-slate-800 hover:text-white;
@@ -17,5 +17,5 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-[#50d4e0ad] rounded-lg
+  @apply bg-[#50d4e0ad] rounded-lg;
 }
