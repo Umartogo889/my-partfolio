@@ -27,9 +27,6 @@ const HeaderHero = () => {
           </h2>
           <div className="mt-5 flex justify-center gap-4 ">
             <a
-              download={
-                "https://github.com/Umartogo889/resume/blob/main/Umar%20Tolibov%20Resume%20(3).pdf"
-              }
               className="btn-hero  hover:text-white  hover:bg-slate-800 dark:hover:bg-[#ccc]  dark:hover:text-[#000]"
               href={
                 "https://github.com/Umartogo889/resume/blob/main/Umar%20Tolibov%20Resume%20(3).pdf"
