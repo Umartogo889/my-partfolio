@@ -45,7 +45,7 @@ const About = () => {
                   className="dark:text-[#fff]"
                 />
                 <p className="font-poppins font-semibold  dark:text-[#fff]">
-                  Ta'lim{" "}
+                  Ta'lim
                 </p>
                 <p className="font-inter font-medium text-[#555] dark:text-[#ccc]">
                   Samarqand Yoshlar Texno Parki
